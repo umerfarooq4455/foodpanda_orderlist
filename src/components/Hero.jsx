@@ -207,6 +207,7 @@ const Hero = () => {
                     setInputValue(e.target.value);
                     setError(null);
                   }}
+                required
                 />
               </div>
               <div className="flex  md:flex-row rounded-lg mt-2 md:mt-0">
@@ -237,11 +238,11 @@ const Hero = () => {
             <div className="flex justify-center items-center md:h-64 h-full">
               <div
                 role="status"
-                class="space-y-8 animate-pulse md:space-y-0 md:space-x-8 rtl:space-x-reverse md:flex md:items-center"
+                className="space-y-8 animate-pulse md:space-y-0 md:space-x-8 rtl:space-x-reverse md:flex md:items-center"
               >
-                <div class="flex items-center justify-center w-full h-48 bg-gray-300 rounded sm:w-96 dark:bg-gray-700">
+                <div className="flex items-center justify-center w-full h-48 bg-gray-300 rounded sm:w-96 dark:bg-gray-700">
                   <svg
-                    class="w-10 h-10 text-gray-200 dark:text-gray-600"
+                    className="w-10 h-10 text-gray-200 dark:text-gray-600"
                     aria-hidden="true"
                     xmlns="http://www.w3.org/2000/svg"
                     fill="currentColor"
@@ -251,44 +252,44 @@ const Hero = () => {
                   </svg>
                 </div>
 
-                <div class="w-full">
-                  <div class="flex items-center justify-between">
+                <div className="w-full">
+                  <div className="flex items-center justify-between">
                     <div>
-                      <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
-                      <div class="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
+                      <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
+                      <div className="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
                     </div>
-                    <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
+                    <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
                   </div>
-                  <div class="flex items-center justify-between pt-4">
+                  <div className="flex items-center justify-between pt-4">
                     <div>
-                      <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
-                      <div class="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
+                      <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
+                      <div className="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
                     </div>
-                    <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
+                    <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
                   </div>
-                  <div class="flex items-center justify-between pt-4">
+                  <div className="flex items-center justify-between pt-4">
                     <div>
-                      <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
-                      <div class="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
+                      <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
+                      <div className="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
                     </div>
-                    <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
+                    <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
                   </div>
-                  <div class="flex items-center justify-between pt-4">
+                  <div className="flex items-center justify-between pt-4">
                     <div>
-                      <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
-                      <div class="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
+                      <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
+                      <div className="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
                     </div>
-                    <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
+                    <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
                   </div>
-                  <div class="flex items-center justify-between pt-4">
+                  <div className="flex items-center justify-between pt-4">
                     <div>
-                      <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
-                      <div class="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
+                      <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-600 w-24 mb-2.5"></div>
+                      <div className="w-32 h-2 bg-gray-200 rounded-full dark:bg-gray-700"></div>
                     </div>
-                    <div class="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
+                    <div className="h-2.5 bg-gray-300 rounded-full dark:bg-gray-700 w-12"></div>
                   </div>
                 </div>
-                <span class="sr-only">Loading...</span>
+                <span className="sr-only">Loading...</span>
               </div>
             </div>
           ) : null}

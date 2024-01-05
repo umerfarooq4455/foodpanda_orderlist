@@ -4,11 +4,9 @@ import React, { useState } from "react";
 const TableComponent = ({ all, fandom, videodata }) => {
   const [activeNavItem, setActiveNavItem] = useState("vedio");
 
-
   const handleNavItemClick = (tab) => {
     setActiveNavItem(tab);
   };
-
 
   const handleDownloadClick = (item) => {
     const dynamicUrl = item.url;

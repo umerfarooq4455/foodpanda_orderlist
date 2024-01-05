@@ -7,7 +7,6 @@ import About from "./components/pages/About.jsx";
 import Contactus from "./components/pages/Contactus.jsx";
 import Terms from "./components/pages/Terms.jsx";
 
-
 function App() {
   return (
     <>

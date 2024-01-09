@@ -4,6 +4,7 @@ import Tutorial from "./pages/Tutorial";
 import axios from "axios";
 
 const Hero = () => {
+  
   const [inputValue, setInputValue] = useState("");
   const [showCard, setShowCard] = useState(false);
   const [fandom, setFandom] = useState(null);
@@ -23,7 +24,6 @@ const Hero = () => {
 
   const notValidUrl = (url) => {
     const blacklist = [
-      "https://youtu.be",
       "adultSwim.com",
       "alphaPorno.com",
       "eporner.com",

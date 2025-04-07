@@ -13,26 +13,26 @@ const Navbar = () => {
     setToggleMenu(false);
   };
   return (
-    <nav className="relative bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%  text-white mx-auto p-6 ">
+    <nav className="relative px-5 bg-white shadow-md text-2xl font-bold mb-4 text-center text-pink-600 mx-auto p-4 ">
       {/* Flex Container */}
       <div className="flex items-center justify-between">
         {/* Logo */}
         <Link
           to="/"
-          className="text-center font-extralight md:text-3xl text-2xl font-pacific hover:text-sky-800 "
+          className="text-center text-2xl font-serif hover:text-sky-800 "
         >
-          Video Downloader
+          Foodpanda
         </Link>
         {/* Menu Items */}
-        <div className="hidden space-x-6 md:flex text-xl  font-pacific">
+        <div className="hidden space-x-6 md:flex text-xl  font-serif">
           <Link to="/" className="hover:text-sky-800 ">
-            Home
+            Profile
           </Link>
           <Link to="/about" className="hover:text-sky-800 ">
-            About
+            EN
           </Link>
           <Link to="contactus" className="hover:text-sky-800 ">
-            Contact us
+            box
           </Link>
         </div>
 
@@ -52,7 +52,7 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Menu */}
-      <div className="md:hidden  text-xl font-medium text-white font-pacific">
+      <div className="md:hidden  text-xl font-medium text-white font-serif">
         <div
           className={
             toggleMenu

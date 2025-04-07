@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Video Retriever",
+  "name": "VideoRetriever - Fast and Easy Video Downloader",
   "icons": [
     {
       "src": "favicon.ico",

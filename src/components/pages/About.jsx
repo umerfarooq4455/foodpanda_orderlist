@@ -1,15 +1,24 @@
 import React from "react";
 import downloadimg from "../../assets/Images/about.png";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
+
 
 const About = () => {
   return (
     <>
+      <Helmet>
+        <meta
+          name="description"
+          content="Download Your Favorite Videos with Ease - Your Ultimate Video Downloader Hub"
+        />
+      </Helmet>
+
       <section className="bg-white dark:bg-gray-900">
         <div className="py-10 pb-24 px-4 mx-auto ">
-          <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-sky-800 dark:text-white">
+          <h1 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-sky-800 dark:text-white">
             About Us
-          </h2>
+          </h1>
           <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
             What we do
           </p>

@@ -27,6 +27,7 @@ const TableComponent = ({ all, fandom, videodata }) => {
   return (
     <>
       <div>
+        <h1></h1>
         {/* Navigation */}
         <div className="flex space-x-4">
           <button

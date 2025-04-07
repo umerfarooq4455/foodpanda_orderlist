@@ -1,23 +1,29 @@
 
-
 import React from "react";
 import img1 from "../../assets/Images/download.png";
 import img2 from "../../assets/Images/freee.png";
 import img3 from "../../assets/Images/how-to-download-youtube-videos-pc-2.png";
 import img4 from "../../assets/Images/youtube.jpeg";
+import { Helmet } from 'react-helmet';
+
 
 const Tutorial = () => {
   return (
     <>
+      <Helmet>
+        <meta
+          name="description"
+          content="Please review these terms and conditions of use carefully before using Video Downloader - Video Saver."
+        />
+      </Helmet>
       <div className="sm:px-6 md:px-36 py-4 ">
         {/* Quick shortcut */}
         <div className="bg-gray-300 flex justify-center flex-col p-8 font-sanss font-extralight  mb-4 rounded-xl">
-          <h4 className="font-semibold text-center text-2xl py-4">
-            Quick shortcut to download videos
-          </h4>
+          <h1 className="font-semibold text-center text-2xl py-4">
+            A Quick Shortcut to Download Videos
+          </h1>
           <p className="font-pata mt-2">
-            You can quickly download YouTube videos by replacing the "you" in
-            youtube.com with "000". Here's an example:
+            Expedite your YouTube video downloads with a simple trick. By replacing "you" in youtube.com with "000,"
           </p>
           <div className="bg-gray-200 flex justify-center">
             <p className="font-semibold  p-4  text-[10px] lg:text-sm">
@@ -33,200 +39,162 @@ const Tutorial = () => {
         </div>
         {/* Quick shortcut */}
 
+
         {/* Description */}
         <div className="bg-gray-300 flex justify-center flex-col p-8 font-sanss font-extralight mb-4 rounded-xl">
           <p className="font-pata leading-7">
-            Videodownloader is a free online YouTube video downloader that
-            allows users to download videos from YouTube instantly and easily.
-            Simply paste a YouTube link in the textbox above and download your
-            favorite videos right away.
+            Unlock a world of possibilities with Videodownloader.
           </p>
           <div className="py-4 leading-7">
-            <p className="font-pata ">
-              With this YouTube downloader tool, you can download YouTube videos
-              in HD quality without having to install any additional software or
-              browser extensions. The tool is 100% online and free to use.
+            <p className="font-pata">
+              Elevate your video downloading experience with this YouTube downloader tool, enabling you to download YouTube videos in high-definition quality without the need for additional software or browser extensions. Our tool is not only 100% online but also completely free to use.
             </p>
             <p className="font-pata">
-              We've built this online video tool to allow teachers and educators
-              to save videos for use in the classroom, journalists who want to
-              keep a copy of important videos before they're removed from the
-              platform, and others who wish to download YouTube videos that are
-              copyright-free for offline use.
+              Tailored for educators, Videodownloader serves as an invaluable resource for teachers and educators, facilitating the seamless integration of videos into classrooms. It's also a sanctuary for journalists seeking to archive crucial videos before they vanish from the platform. Moreover, it's the ideal solution for anyone looking to download YouTube videos that are copyright-free for offline use.
             </p>
             <p className="font-pata">
-              It is the safest and the best alternative to Y2Mate, SaveFrom,
-              BTClod, QDownloader, BitDownloader, X2Mate, 4K Video Downloader,
-              8Downloader, and other websites that are filled with malicious
-              ads.
+              Trust in the safety and reliability of Videodownloader as your preferred alternative to Y2Mate, SaveFrom, BTClod, QDownloader, BitDownloader, X2Mate, 4K Video Downloader, 8Downloader, and other websites notorious for malicious ads.
             </p>
           </div>
         </div>
         {/* Description */}
 
+
         {/* HOW TO download youtube video on PC */}
         <div className="bg-gray-300 flex justify-center flex-col p-8 font-sanss font-extralight mb-4 rounded-xl">
           <h4 className="font-semibold text-center text-2xl py-4">
-            How to download YouTube videos on PC?
+            How to Download YouTube Videos on PC
           </h4>
           <p className="font-pata leading-7">
-            Downloading videos from YouTube on your computer is a quick and
-            straightforward process, thanks to the Vediosdownloader.
+            Streamlining the process of downloading YouTube videos on your computer becomes a breeze, thanks to Vediosdownloader.
           </p>
-          <p className="font-pata leading-7">Here are the steps.</p>
+          <p className="font-pata leading-7">Follow these simple steps:</p>
           <div className="flex flex-col">
             <p className="font-pata leading-7">
-              1. Go to YouTube's website and open the video that you want to
-              download.
+              1. Navigate to YouTube's website and open the video you want to download.
             </p>
             <p className="font-pata leading-7">
               2. Copy the video's link from your browser's address bar.
             </p>
-            <img src={img3} alt="" className="w-80 md:w-1/3" />
+            <img src={img3} alt="" className="w-80  h-50 md:w-1/3" />
             <p className="font-pata leading-10 py-4">
-              3. Paste the link into the search box on Vediosdownloader, such as
-              the one at the top of this page.
+              3. Paste the link into the search box on Vediosdownloader, located at the top of this page.
             </p>
-            <img src={img2} alt="" className="w-80 md:w-1/3" />
+            <img src={img2} alt="" className="w-80 h-50 md:w-1/3" />
             <p className="font-pata leading-10 py-2">
-              4. Vediosdownloader will automatically begin searching for the
-              video.
-            </p>
-            <p className="font-pata">
-              It will display the results within a few seconds.
+              4. Vediosdownloader will automatically initiate the search for the video,
+              displaying the results within seconds.
             </p>
             <p className="font-pata leading-10 py-2">
-              5. Determine the video resolution that you want to save, then
-              right-click on the Download button and select the "Save", "Save
-              As", or "Save Link As" option. The naming will vary depending on
-              the browser that you use.
+              5. Determine the desired video resolution, then right-click on the Download button.
+              Select the "Save," "Save As," or "Save Link As" option, depending on your browser.
             </p>
-            <img src={img1} alt="" className="w-80 md:w-1/4" />
+            <img src={img1} alt="" className="w-80 h-50 md:w-1/4" />
             <p className="font-pata leading-10 py-2">
-              6. The YouTube video will begin to download to your computer and
-              will be saved to your default or the selected downloads folder.
+              6. The YouTube video will commence downloading to your computer,
+              saving it to your default or selected downloads folder.
             </p>
           </div>
           <p className="font-pata leading-10 ">
-            7. The video will begin to save to your mobile and should be
-            completed within a few seconds or minutes depending on the file
-            size.
+            7. The video download will start and should be completed within a few seconds or minutes,
+            depending on the file size.
           </p>
         </div>
         {/* HOW TO download youtube video on PC */}
 
-        {/* HOW TO download youtube video on ios */}
+
+        {/* HOW TO download youtube video on iOS/Android/Smartphone */}
         <div className="bg-gray-300 flex justify-center flex-col p-8 font-sanss font-extralight mb-4 rounded-xl">
           <h4 className="font-semibold text-center text-[13px]  md:text-2xl  py-4">
-            How to download YouTube videos on iOS/Android/Smartphone?
+            How to Download YouTube Videos on iOS/Android/Smartphone
           </h4>
           <p className="font-pata py-2">
-            To download YouTube videos on your mobile, simply paste the link of
-            the YouTube video in 10Download and then save the video
-          </p>
-          <p className="font-pata py-2">
-            Here are the step-by-step instructions:{" "}
+            To effortlessly download YouTube videos on your mobile device, follow these simple steps using 10Download:
           </p>
           <div className="flex flex-col">
             <p className="font-pata py-2">
-              1. On the YouTube app, open the video that you want to save.
+              1. Open the YouTube app and locate the video you want to save.
             </p>
             <p className="font-pata py-2">
-              2. Tap on the Share button below the video, then select{" "}
+              2. Tap on the Share button below the video, then choose{" "}
               <span className="font-bold">Copy link.</span>{" "}
             </p>
-            <img src={img4} alt="" className="w-80 md:w-1/4" />
+            <img src={img4} alt="" className="w-80 h-50 md:w-1/4" />
             <p className="font-pata py-2">
-              3. Open a browser on your phone and go to vediodownloader.com.
+              3. Open your phone's browser and navigate to vediodownloader.com.
             </p>
             <p className="font-pata py-2">
               4. Paste the link into the search box at the top of the page.
             </p>
-            <img src={img2} alt="" className="w-80 md:w-1/3" />
+            <img src={img2} alt="" className="w-80 h-50 md:w-1/3" />
             <p className="font-pata py-2">
-              5. The website will begin searching for the video. Within a few
-              seconds, it should display the video's available resolutions and
-              output formats.
+              5. The website will initiate the search for the video. Within seconds, it will present the available resolutions and output formats.
             </p>
             <p className="font-pata py-2">
-              6. Determine the video resolution that you want to save, then tap
-              and hold on to the Download button next to it and select the save
-              option.
+              6. Select your desired video resolution, then tap and hold the Download button next to it. Choose the save option.
             </p>
             <p className="font-pata py-2">
-              On iPhone, the option is commonly called "Download Linked File".
+              On iPhone, this option is typically labeled as "Download Linked File."
             </p>
           </div>
           <h5 className="font-bold py-2">
-            On Android, the name varies but it's usually called "Download File",
-            "Download", or "Save".
+            On Android, the option may vary but is commonly named "Download File," "Download," or "Save."
           </h5>
-          <img src={img1} alt="" className="w-80 md:w-1/4" />
+          <img src={img1} alt="" className="w-80 h-50 md:w-1/4" />
           <p className="font-pata py-4">
-            7. The video will begin to save to your mobile and should be
-            completed within a few seconds or minutes depending on the file
-            size.
+            7. The video will start saving to your mobile and should be completed within seconds or minutes, depending on the file size.
           </p>
         </div>
-        {/* HOW TO download youtube video on ios */}
+
 
         {/* FAQ */}
         <div className="bg-gray-300 flex justify-center flex-col p-8 font-sanss font-extralight mb-4 rounded-xl">
           <h4 className="font-semibold text-center text-2xl py-4">
-            Online YouTube Downloader FAQ
+            FAQs about VideoRetriever - Your Ultimate YouTube Video Downloader
           </h4>
           <h5 className="font-bold py-2">
-            How can I download videos from YouTube?
+            How can I download videos from YouTube using VideoRetriever?
           </h5>
           <div className="flex flex-col">
             <p className="font-pata py-2">
-              1. Open a web browser and go to YouTube. If you're on mobile, you
-              can open the YouTube app alternatively.
+              1. Launch your web browser and navigate to YouTube. For mobile users, the YouTube app is a convenient alternative.
             </p>
             <p className="font-pata py-2">
-              2. Go to the video that you wish to download and copy its link. On
-              desktop, you can copy the video's link from the browser's URL bar.
-              On the YouTube app, tap the share button and copy the URL.
+              2. Locate the video you want to download and copy its link. On desktop, copy the video link from the browser's URL bar. On the YouTube app, tap the share button and copy the URL.
             </p>
             <p className="font-pata py-2">
-              3. Go to 10downloader.com in a web browser.
+              3. Visit VideoRetriever.com in your web browser.
             </p>
             <p className="font-pata py-2">
-              4. Paste the video's link into the search bar and press the
-              Download button.
+              4. Paste the video link into the search bar and click the Download button.
             </p>
             <p className="font-pata py-2">
-              5. Now select the format and quality that you want to download.
-              The video will get saved to your device.
+              5. Choose your preferred format and quality for the download. Your video will be saved to your device.
             </p>
           </div>
           <h5 className="font-bold py-2">
-            Do I need to pay to use this video downloader?
+            Is VideoRetriever a paid service?
           </h5>
           <p className="font-pata py-2">
-            No. Our YouTube downloader is 100% free to use and you don't need to
-            pay for anything.
+            No, VideoRetriever is a 100% free YouTube downloader. There are no charges for using any of its features.
           </p>
           <h5 className="font-bold py-2">
-            Which other websites are supported?
+            Which websites are supported by VideoRetriever?
           </h5>
           <p className="font-pata py-2">
-            10Downloader works with YouTube only.
+            VideoRetriever exclusively works with YouTube.
           </p>
           <h5 className="font-bold py-2">
-            Can I use this YouTube video downloader on PC or mobile?
+            Can I use VideoRetriever on both PC and mobile devices?
           </h5>
           <p className="font-pata py-2">
-            Definitely! Since our YouTube downloader is an online tool, you can
-            use it from any computer or mobile device that has access to the
-            internet.
+            Absolutely! VideoRetriever is an online tool, accessible from any computer or mobile device with internet access.
           </p>
           <h5 className="font-bold py-2">
-            Is it safe to download videos from YouTube using this tool?
+            Is it safe to download videos from YouTube using VideoRetriever?
           </h5>
           <p className="font-pata py-2">
-            Yes! We do not collect or log any user data and the videos that they
-            download.
+            Yes! VideoRetriever prioritizes user privacy, refraining from collecting or logging any user data and downloaded videos.
           </p>
         </div>
         {/* FAQ */}

@@ -1,5 +1,5 @@
 import React from "react";
-import downloadimg from "../../assets/Images/freee.png";
+import downloadimg from "../../assets/Images/about.png";
 import { Link } from "react-router-dom";
 
 const About = () => {
@@ -7,7 +7,7 @@ const About = () => {
     <>
       <section className="bg-white dark:bg-gray-900">
         <div className="py-10 pb-24 px-4 mx-auto ">
-          <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-[#ED5400] dark:text-white">
+          <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-sky-800 dark:text-white">
             About Us
           </h2>
           <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
@@ -15,7 +15,7 @@ const About = () => {
           </p>
 
           <div className="flex flex-wrap ">
-            <div className="w-full px-4 mb-10 lg:w-1/2 lg:mb-0 hidden md:block">
+            <div className="w-full  px-4 mb-10 lg:w-1/2 lg:mb-0 hidden md:block">
               <img
                 src={downloadimg}
                 alt=""
@@ -23,7 +23,7 @@ const About = () => {
               />
             </div>
             <div className="w-full px-4 mb-10 lg:w-1/2 lg:mb-0 ">
-              <h2 className="py-3 pl-2 mb-4 text-2xl font-bold text-[#ED5400] border-l-4 border-[#ED5400] dark:text-gray-300">
+              <h2 className="py-3 pl-2 mb-4 text-2xl font-bold text-sky-800 border-l-4 border-sky-800 dark:text-gray-300">
                 Video Downloader - Video Saver
               </h2>
               <p className="mb-4 text-base leading-7 text-gray-500 dark:text-gray-400">
@@ -32,7 +32,7 @@ const About = () => {
               </p>
               <ul className="mb-10">
                 <li className="flex items-center mb-4 text-base text-gray-600 dark:text-gray-400">
-                  <span className="mr-3 text-[#ED5400]  ">
+                  <span className="mr-3 text-sky-800  ">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
@@ -47,7 +47,7 @@ const About = () => {
                   Seamless Video Downloads
                 </li>
                 <li className="flex items-center mb-4 text-base text-gray-600 dark:text-gray-400">
-                  <span className="mr-3 text-[#ED5400]  ">
+                  <span className="mr-3 text-sky-800 ">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
@@ -62,7 +62,7 @@ const About = () => {
                   Versatility at Your Fingertips
                 </li>
                 <li className="flex items-center mb-4 text-base text-gray-600 dark:text-gray-400">
-                  <span className="mr-3 text-[#ED5400] ">
+                  <span className="mr-3 text-sky-800 ">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="16"
@@ -79,7 +79,7 @@ const About = () => {
               </ul>
               <Link
                 to="/"
-                className="px-4 py-3 text-[#ED5400]  transition-all transform border border-[#ED5400]  hover:bg-[#ED5400]   hover:text-gray-100"
+                className="px-4 py-3text-white hover:text-sky-800  mx-2 font-pacific text-xs md:text-base rounded-lg py-2 font-thin mt-2 md:mt-0 md:ml-2 bg-gradient-to-r from-green-400 to-blue-500 hover:from-blue-500 hover:to-green-400"
               >
                 Download Now
               </Link>

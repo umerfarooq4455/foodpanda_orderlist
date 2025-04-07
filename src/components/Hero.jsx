@@ -185,24 +185,24 @@ const Hero = () => {
 
   return (
     <>
-      <div className="flex justify-center mt-10">
-        <div className="container mx-auto bg-white rounded-lg p-6">
-          <form onSubmit={handleSubmit}>
-            <h1 className="text-center font-bold text-[#ED5400] md:text-4xl text-2xl">
+      <div className="flex justify-center mt-3 mx-2 md:mx-0 md:mt-10 ">
+        <div className="container mx-auto bg-white rounded-lg p-6 bg-gradient-to-r from-green-400 to-blue-500 hover:from-blue-500 hover:to-green-400">
+          <form onSubmit={handleSubmit} className="md:py-7">
+            <h1 className="text-center  text-white md:text-4xl text-2xl font-Roboto">
               All Video Downloader - Video Saver 4k,8k
             </h1>
-            <h5 className="text-center py-3 font-bold text-[#ED5400] md:text-xl text-sm">
+            <h5 className="text-center py-3  text-white md:text-xl text-sm font-Roboto">
               The best YouTube Video Downloader
             </h5>
-            <div className="flex flex-col md:flex-row border border-gray-400-500 items-center bg-white rounded-lg overflow-hidden px-2 py-1 justify-between">
+            <div className="flex flex-col md:mt-3 md:flex-row border border-gray-400-500 items-center bg-white rounded-lg overflow-hidden px-2 py-1 justify-between">
               <div>
                 <input
-                  className={`md:text-base text-black flex-grow outline-none  text-sm px-2 text-center md:text-start w-auto md:w-80  ${
-                    error ? "border-red-500" : ""
-                  }`}
+                  className={`md:text-base text-blue-500 flex-grow outline-none  text-sm px-2 text-center md:text-start w-auto md:w-80  ${error ? "border-red-500" : ""
+                    }`}
                   type="link"
                   placeholder="Enter video link"
                   value={inputValue}
+                  required
                   onChange={(e) => {
                     setInputValue(e.target.value);
                     setError(null);
@@ -213,13 +213,13 @@ const Hero = () => {
                 <button
                   type="button"
                   onClick={handlePaste}
-                  className={`bg-[#ED5400] text-white mx-2 text-xs md:text-base rounded-lg px-4 py-2 font-thin mt-2 md:mt-0 md:ml-2`}
+                  className={` text-white hover:text-sky-800  mx-2 font-pacific text-xs md:text-base rounded-lg px-4 py-2 font-thin mt-2 md:mt-0 md:ml-2 bg-gradient-to-r from-green-400 to-blue-500 hover:from-blue-500 hover:to-green-400`}
                 >
                   Paste Link
                 </button>
                 <button
                   type="submit"
-                  className={`bg-[#ED5400] text-white text-xs md:text-base rounded-lg px-4 py-2 font-thin mt-2 md:mt-0 md:ml-2`}
+                  className={` text-white hover:text-sky-800  mx-2 font-pacific text-xs md:text-base rounded-lg px-4 py-2 font-thin mt-2 md:mt-0 md:ml-2 bg-gradient-to-r from-green-400 to-blue-500 hover:from-blue-500 hover:to-green-400`}
                 >
                   Download
                 </button>

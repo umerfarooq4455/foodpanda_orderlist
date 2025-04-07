@@ -13,26 +13,26 @@ const Navbar = () => {
     setToggleMenu(false);
   };
   return (
-    <nav className="relative bg-gradient-to-r from-red-600 to-yellow-400 text-white mx-auto p-6 ">
+    <nav className="relative bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%  text-white mx-auto p-6 ">
       {/* Flex Container */}
       <div className="flex items-center justify-between">
         {/* Logo */}
         <Link
           to="/"
-          className="text-center font-sanss font-extralight md:text-3xl text-2xl"
+          className="text-center font-extralight md:text-3xl text-2xl font-pacific hover:text-sky-800 "
         >
           Video Downloader
         </Link>
         {/* Menu Items */}
-        <div className="hidden space-x-6 md:flex  font-sanss font-medium">
-          <Link to="/" className="hover:text-[#ED5400] ">
+        <div className="hidden space-x-6 md:flex text-xl  font-pacific">
+          <Link to="/" className="hover:text-sky-800 ">
             Home
           </Link>
-          <Link to="/about" className="hover:text-[#ED5400] ">
+          <Link to="/about" className="hover:text-sky-800 ">
             About
           </Link>
-          <Link to="contactus" className="hover:text-[#ED5400] ">
-            Contact Us
+          <Link to="contactus" className="hover:text-sky-800 ">
+            Contact us
           </Link>
         </div>
 
@@ -52,31 +52,31 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Menu */}
-      <div className="md:hidden  font-sanss font-medium text-[#ED5400]">
+      <div className="md:hidden  text-xl font-medium text-white font-pacific">
         <div
           className={
             toggleMenu
-              ? "absolute flex flex-col items-center self-end  h-screen py-8 mt-6 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-0 right-0 drop-shadow-md"
-              : "absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+              ? "absolute flex flex-col items-center self-end  h-screen py-8 mt-6 space-y-6 font-bold bg-gradient-to-r from-cyan-500 to-blue-500 sm:w-auto sm:self-center left-0 right-0 drop-shadow-md"
+              : "absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-gradient-to-r from-cyan-500 to-blue-500 sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
           }
         >
           <Link
             to="/"
-            className="hover:text-[#bb6464] "
+            className="hover:text-sky-800 "
             onClick={closeMobileMenu}
           >
             Home
           </Link>
           <Link
             to="/about"
-            className="hover:text-[#bb6464] "
+            className="hover:text-sky-800 "
             onClick={closeMobileMenu}
           >
             About
           </Link>
           <Link
             to="/contactus"
-            className="hover:text-[#bb6464] "
+            className="hover:text-sky-800 "
             onClick={closeMobileMenu}
           >
             Contact Us

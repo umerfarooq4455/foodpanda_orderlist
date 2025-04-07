@@ -21,6 +21,8 @@ module.exports = {
       },
       fontFamily: {
         'sanss': ['Poppins', 'sans-serif'],
+        'pacific': ['Pacifico'],
+        'Roboto': ['Roboto,sans-serif']
       },
     },
   },

@@ -30,17 +30,15 @@ const TableComponent = ({ all, fandom, videodata }) => {
         {/* Navigation */}
         <div className="flex space-x-4">
           <button
-            className={`px-2 py-2 ${
-              activeNavItem === "vedio" ? "bg-[#ED5400] text-white" : "bg-white"
-            }`}
+            className={`text-sky-700  font-pacific ${activeNavItem === "vedio" ? "bg-[#ED5400] text-white hover:text-sky-800 font-pacific text-xs md:text-base rounded-lg px-4 py-2 font-thin  bg-gradient-to-r from-green-400 to-blue-500 hover:from-blue-500 hover:to-green-400" : "bg-white"
+              }`}
             onClick={() => handleNavItemClick("vedio")}
           >
             Video
           </button>
           <button
-            className={`px-4 py-2 ${
-              activeNavItem === "audio" ? "bg-[#ED5400] text-white" : "bg-white"
-            }`}
+            className={`px-4 py-2 text-sky-700 font-pacific ${activeNavItem === "audio" ? "bg-[#ED5400] text-white hover:text-sky-800 font-pacific text-xs md:text-base rounded-lg px-4 py-2 font-thin  bg-gradient-to-r from-green-400 to-blue-500 hover:from-blue-500 hover:to-green-400" : "bg-white"
+              }`}
             onClick={() => handleNavItemClick("audio")}
           >
             Thumbnail
@@ -50,8 +48,8 @@ const TableComponent = ({ all, fandom, videodata }) => {
         {/* Table */}
         <div>
           {activeNavItem === "vedio" && (
-            <table className="w-full  border">
-              <thead className="text-[10px] md:text-base text-left">
+            <table className="w-full rounded-lg shadow-2xl">
+              <thead className="text-[10px] md:text-base text-left text-sky-800 font-pacific">
                 <tr>
                   <th className="px-4 py-4">Format</th>
                   <th className="px-4 py-4">Quality</th>
@@ -65,7 +63,7 @@ const TableComponent = ({ all, fandom, videodata }) => {
                     <td className="md:px-4 md:py-4 ">{item.format}</td>
                     <td>
                       <button
-                        className="bg-[#ED5400] text-white px-2 py-1 rounded"
+                        className="bg-gradient-to-r from-green-400 to-blue-500 hover:from-blue-500 hover:to-green-400 text-white px-2 py-1 rounded"
                         onClick={() => handleDownloadClicke(item)}
                       >
                         Download
@@ -80,7 +78,7 @@ const TableComponent = ({ all, fandom, videodata }) => {
                     <td className="md:px-4 md:py-4 ">{item.format}</td>
                     <td className="py-2">
                       <button
-                        className="bg-[#ED5400] text-white  md:px-2 md:py-1 md:mt-2 text-sm md:text-base text-[10px] px-1 py-1 rounded"
+                        className="bg-sky-700 text-white  md:px-2 md:py-1 md:mt-2 text-sm md:text-base text-[10px] px-1 py-1 rounded"
                         onClick={() => handleDownloadClick(item)}
                       >
                         Download
@@ -93,8 +91,8 @@ const TableComponent = ({ all, fandom, videodata }) => {
           )}
 
           {activeNavItem === "audio" && (
-            <table className="w-full border">
-              <thead className="text-[10px] md:text-base text-left">
+            <table className="w-full  rounded-lg shadow-2xl">
+              <thead className="text-[10px] md:text-base text-left text-sky-800 font-pacific">
                 <tr>
                   <th className="px-4 py-4 ">Image</th>
                   <th className="px-4 py-4">Format</th>
@@ -115,7 +113,7 @@ const TableComponent = ({ all, fandom, videodata }) => {
                     <td className="px-4 py-4">jpg</td>
                     <td>
                       <button
-                        className="bg-[#ED5400] text-white px-2 py-1 rounded"
+                        className="bg-sky-700 text-white px-2 py-1 rounded"
                         onClick={() => handleDownloadClicke(item)}
                       >
                         Download

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="bg-[#ED5400] py-10">
+    <div className="bg-gradient-to-r from-green-400 to-blue-500 hover:from-blue-500 hover:to-green-400 py-10">
       <div className="text-white flex font-sanss font-thin justify-center p-4">
         ©2024 All video Downloader - Video Saver
       </div>
